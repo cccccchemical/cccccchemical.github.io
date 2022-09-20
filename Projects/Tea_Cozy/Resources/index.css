@@ -1,0 +1,57 @@
+* {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+.fixed-header {
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    align-items: center;
+    display: flex;
+}
+
+#logo {
+    margin-left: 10px;
+    height: 50px;
+}
+
+.header-text {
+    width: 400px;
+    margin-left: auto;
+    margin-right: 10px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.mission {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+#mission-image {
+    height: 700px;
+    width: 1200px;
+}
+
+.mission-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

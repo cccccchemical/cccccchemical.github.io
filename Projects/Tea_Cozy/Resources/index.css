@@ -7,8 +7,17 @@
     text-align: center;
 }
 
-.container {
-    display: flex;
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    letter-spacing: normal;
+    line-height: 200%;
+}
+
+h5 {
+    line-height: 20%;
 }
 
 .fixed-header {
@@ -16,6 +25,11 @@
     height: 69px;
     align-items: center;
     display: flex;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 #logo {
@@ -36,17 +50,18 @@
     text-align: center;
     display: flex;
     justify-content: center;
- 
+    top: 60px;
 }
 
 #mission-image {
     height: 700px;
     width: 1200px;
+    top:0;
 }
 
 .mission-text {
     position: absolute;
-    top: 50%;
+    top: 300px;
     left: 0;
     width: 100%;
     height: auto;
@@ -54,4 +69,106 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.featured-tea {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-tea-text {
+    text-align: center;
+    width: 1000px;
+    top: 100px;
+}
+
+.featured-tea-pictures {
+    width: 1000px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tea-container {
+    width: 300px;
+    margin: 0px 10px;
+}
+
+.tea-pictures {
+    opacity: 1;
+    height: 200px;
+    width: 300px;
+}
+
+.locations {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    align-items: center;
+    flex-direction: column;
+}
+
+.locations *{
+    opacity: 1;
+}
+
+.locations-text {
+    position: absolute;
+    top: 50px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+
+.locations-text h2 {
+    background-color: transparent;
+}
+
+.location-list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+
+
+.location-list div{
+    width: 300px;
+    height: 260px;
+    margin: 0 20px;
+    opacity: 1;
+    letter-spacing: -1px;
+    line-height: 120%;
+}
+
+
+
+
+.bottom-banner {
+    position: relative;
+    height: 200px;
+    top: -200px;
+    width: 1200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyright-banner * {
+    margin-left: 20px;
+    text-align: left;
 }

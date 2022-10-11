@@ -12,12 +12,13 @@
     </head>
   <body>
     <nav>
-      <h2 id="logo"><a href="/">Haven's space</a></h2>
+      <h2 id="logo">Haven's space</h2>
       <ul class="navigation-items">
-        <li class="navigation-item"><a href="./index.html#about-me">About Me</a></li>
+        <li class="navigation-item" href="./index.html#about-me">About Me</li>
         <li class="navigation-item"><a href="./index.html#projects">Projects</a></li>
         <li class="navigation-item"><a href="./index.html#skills">Skills</a></li>
-        <li class="navigation-item"><a href="/contact.html">Contact</a></li>
+        <li class="navigation-item"><a href="#">Contact</a></li>
+        <li><button id="light_button" type="button" onclick="dark_light_function()">Light</button></li>
       </ul>
     </nav>
     <main>
@@ -56,6 +57,15 @@
       window.onload = function () {
         loading_time.innerHTML = (new Date()).getTime() - window.startTime;
       }
+      function dark_light_function() {
+          var element = document.body;
+          element.classList.toggle("dark");
+          if (document.getElementById("light_button").innerHTML == "Dark") {
+            document.getElementById("light_button").innerHTML = "Light"
+          } else {
+            document.getElementById("light_button").innerHTML = "Dark"
+          }
+        }
     </script>
 </footer>
 </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script>
+            window.startTime = (new Date()).getTime();
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="./resources/index.css">
+    </head>
+  <body>
+    <nav>
+      <h2 id="logo"><a href="/">Haven's space</a></h2>
+      <ul class="navigation-items">
+        <li class="navigation-item"><a href="./home_page.html#about-me">About Me</a></li>
+        <li class="navigation-item"><a href="./home_page.html#projects">Projects</a></li>
+        <li class="navigation-item"><a href="./home_page.html#skills">Skills</a></li>
+        <li class="navigation-item"><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Have an interesting project? I would love to hear about it!</p>
+        <div>
+          <a href="https://www.linkedin.com/in/qihong-xu-junior-chemical-engineer/"><i class="fab fa-linkedin icon" target="_blank"><img src="./resources/images/free-linkedin-icon-2166-thumb.png" ></i></a>
+          <a href="https://github.com/cccccchemical" target="_blank"><i class="fab fa-github icon"><img src="./resources/images/github_icon.png" ></i></a>
+          <a href="mailto:dahong@gmail.com?subject = Enquiry&body = message" target="_blank"><i class="fas fa-envelope-square icon"><img src="./resources/images/mail_icon.png"></i></a>
+        </div>
+      </section>
+    </main>
+    <script>
+        const timeContainer = document.getElementById("time-container");
+        const BIRTH_DAY = "01-09-2022";
+        const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+        const intlNumberFormatter = new Intl.NumberFormat("en-US");
+    
+        setInterval(() => {
+          const now = new Date();
+          const difference = Math.floor(
+            (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+          );
+    
+          timeContainer.innerHTML = intlNumberFormatter.format(difference);
+        }, 1000);
+      </script>
+</body>
+<footer>
+    Made with <span class="heart">♥</span> in Melbourne
+    <p>This browser takes only <i><span id="loading-time">100</span>ms</i> to load this page!</p>
+    <script>
+      const loading_time = document.getElementById("loading-time")
+
+      window.onload = function () {
+        loading_time.innerHTML = (new Date()).getTime() - window.startTime;
+      }
+    </script>
+</footer>
+</html>

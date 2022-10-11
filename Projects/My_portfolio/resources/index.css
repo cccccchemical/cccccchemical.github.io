@@ -117,7 +117,7 @@ summary h3:before {
 }
 
 details[open] > summary {
-    background-color: rgb(141, 249, 147);
+    background-color: rgb(193, 248, 196);
   }
 
 footer {
@@ -170,3 +170,15 @@ footer p{
     font-size: 0.7em;
 }
 
+div a i img{
+  height: 30px;
+}
+
+i {
+  font-weight: bolder;
+}
+
+.dark {
+  background-color: #222;
+  color: #e6e6e6;
+}
